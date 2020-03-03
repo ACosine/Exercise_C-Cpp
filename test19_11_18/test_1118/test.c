@@ -10,7 +10,7 @@ void main()
 	//int b = (++a) + (a++) + (a++);
 	//int b = (a++) + (a++) + (++a);
 	//printf("b=%d\n",b);
-	return;
+	return NULL;
 }
 
 
