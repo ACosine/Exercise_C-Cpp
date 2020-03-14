@@ -8,7 +8,7 @@ int GCD(a, b)
 		k = b;
 	while (1)
 	{
-		if(k % a == 0 && k % b == 0)
+		if(k % a == 0 && k % b == 0)  //k能够整除a并且能够整除b
 			break;
 		k++;
 	}
