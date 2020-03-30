@@ -5,7 +5,7 @@
 
 //int IsPrime(int value)              //素数：只能被自身和1整除的数称为素数
 //{
-//	for (int i = 2; i< sqrt(value); ++i)       //看该数是否被2到它本身之间的某个数整除
+//	for (int i = 2; i<= sqrt(value); ++i)       //看该数是否被2到它本身之间的某个数整除，优化[2,value)、[2，根号value]、[2,value/2].
 //	{                                            
 //		if (value % i == 0)
 //			return 0;            //一旦被整除（余数为零）则说明它不是素数，返回1
