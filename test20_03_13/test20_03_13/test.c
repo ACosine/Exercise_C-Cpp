@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS 1  
 #include<stdio.h>
 #include<assert.h>
+#include<string.h>
 /************************************* 打印一个整数的每一位**************************************************/
 
 // void Print_bit(int num)
@@ -33,11 +34,10 @@
 //	}
 //	return res;
 //}
-//
 //int Factorial2(int n)//递归法
 //{
 //	assert(n > 0);//负数没有阶乘
-//	if (n <=1)//0和1的阶乘为1
+//	if (n <= 1)//0和1的阶乘为1
 //	{
 //		return 1;
 //	}
@@ -48,11 +48,11 @@
 //}
 //int main()
 //{
-//	
-//	int n = 0,Res = 0;
+//
+//	int n = 0, Res = 0;
 //	printf("请输入要计算的数阶乘：\n");
 //	scanf("%d", &n);   // n超过12就会溢出
-//	Res=Factorial1(n);
+//	Res = Factorial1(n);
 //	printf("Res=%d\n", Res);
 //	return 0;
 //}
@@ -60,9 +60,45 @@
 
 /************************************* my_strlen *************************************************************/
 
-int mian()
+//int my_strlen1(char* arr)//计数法
+//{
+//	int leng=0;
+//	while (0 != *arr++)//直至访问到\0
+//	{
+//		leng++;
+//	}
+//	return leng;
+//}
+
+int  my_strlen2(char* arr)//递归法
 {
+
+}
+
+int  my_strlen3(char* arr)//指针-指针法
+{
+
+}
+
+int  my_strlen4(char* arr)//standard
+{
+
+}
+
+int main()
+{
+	
+	
+	char arr[20]="hello wold";
+	int leng = 0;
+	//printf("请输入要计算的字符串长度：\n");
+	//gets(arr);
+	//leng = strlen(arr);
+	leng =my_strlen(arr);
+	printf("%d\n", leng);
+	//printf("%s\n", arr);
 	return 0;
+
 }
 
 /************************************* 字符串逆序 ************************************************************/
@@ -75,3 +111,6 @@ int mian()
 
 
 /************************************* 计算斐波那契数 ********************************************************/
+
+
+
