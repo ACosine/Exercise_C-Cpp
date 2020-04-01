@@ -70,47 +70,89 @@
 //	return leng;
 //}
 
-int  my_strlen2(char* arr)//递归法
+//int  my_strlen2(const char* arr)//递归法
+//{
+//	if (0 == *arr)
+//		return 0;
+//	else 
+//		return 1 + my_strlen2(arr+1);
+//	//注意这里不能写成 (arr++);? 会崩溃
+//
+//}
+
+//int  my_strlen3(char* arr)//指针-指针法
+//{
+//	char* p = arr;
+//	while (0 != *p)
+//	{
+//		p++;
+//	}
+//	return p - arr;//指针-指针得到的是指针之间元素个数
+//}
+
+//int  my_strlen4(const char* arr) //standard
+//{
+//	int leng = 0;
+//	assert(arr != NULL); //断言 & const保护参数
+//	while (*arr)
+//	{
+//		arr++;
+//		leng++;
+//	}
+//	return leng;
+//}
+
+//int main()
+//{
+//	
+//	
+//	char arr[20] = {0};
+//	int leng = 0;
+//	printf("请输入要计算的字符串：\n");
+//	gets(arr); //获取字符串
+//
+//	leng= my_strlen1(arr);  //计数法
+//	leng = my_strlen2(arr);   //递归法
+//	leng = my_strlen3(arr);   //指针-指针法
+//	leng = my_strlen4(arr);   //standard
+//
+//	printf("该段字符串的有效长度leng=%d\n", leng);
+//	return 0;
+//
+//}
+
+/************************************* 字符串逆序 ************************************************************/
+int  my_strlen4(const char* arr) //standard
 {
-
-}
-
-int  my_strlen3(char* arr)//指针-指针法
-{
-
-}
-
-int  my_strlen4(char* arr)//standard
-{
-
-}
-
-int main()
-{
-	
-	
-	char arr[20]="hello wold";
 	int leng = 0;
-	//printf("请输入要计算的字符串长度：\n");
-	//gets(arr);
-	//leng = strlen(arr);
-	leng =my_strlen(arr);
-	printf("%d\n", leng);
-	//printf("%s\n", arr);
+	assert(arr != NULL); //断言 & const保护参数
+	while (*arr)
+	{
+		arr++;
+		leng++;
+	}
+	return leng;
+}
+void revers_string1(char arr[])//交换法
+{
+	
+}
+
+void revers_string2(char arr[])//递归法
+{
+
+}
+int mian()
+{
+	char arr[20];
+	gets(arr);
+
+	revers_string1(arr);//交换法
+	revers_string1(arr);//递归法
+
+	puts(arr);
 	return 0;
 
 }
-
-/************************************* 字符串逆序 ************************************************************/
-
-
-/************************************* 计算一个数的每位之和 **************************************************/
-
-
-/************************************* 递归实现n的k次方 ******************************************************/
-
-
-/************************************* 计算斐波那契数 ********************************************************/
-
 
 
