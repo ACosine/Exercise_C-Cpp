@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS 1  
 #include<stdio.h>
 #include<assert.h>
-#include<string.h>
+//#include<string.h>
 /************************************* 打印一个整数的每一位**************************************************/
 
 // void Print_bit(int num)
@@ -24,7 +24,7 @@
 
 /************************************* n的阶乘（不考虑溢出的问题）*******************************************/
 
-//int Factorial1(int n)//非递归法
+//int Factorial1(int n) //非递归法
 //{
 //	assert(n > 0);//负数没有阶乘
 //	int res = 1;
@@ -34,7 +34,7 @@
 //	}
 //	return res;
 //}
-//int Factorial2(int n)//递归法
+//int Factorial2(int n) //递归法
 //{
 //	assert(n > 0);//负数没有阶乘
 //	if (n <= 1)//0和1的阶乘为1
@@ -122,7 +122,7 @@
 //}
 
 /************************************* 字符串逆序 ************************************************************/
-int  my_strlen4(const char* arr) //standard
+int  my_strlen(const char* arr) //standard
 {
 	int leng = 0;
 	assert(arr != NULL); //断言 & const保护参数
@@ -133,24 +133,45 @@ int  my_strlen4(const char* arr) //standard
 	}
 	return leng;
 }
-void revers_string1(char arr[])//交换法
-{
-	
-}
+//void revers_string1(char arr[])//交换法
+//{
+//	char temp = 0;
+//	int  left=0;
+//	int  right = my_strlen(arr) - 1;
+//	while (left<right)
+//	{
+//		
+//		temp = arr[left];
+//		arr[left] = arr[right];
+//		arr[right] = temp;
+//		left++;
+//		right--;
+//	}
+//}
 
-void revers_string2(char arr[])//递归法
+void revers_string2(char arr[]) //递归法
 {
-
+	char temp = arr[0];   //(1)首元素放临时变量中
+	int leng = my_strlen(arr);
+	arr[0] = arr[leng - 1];  //(2)末尾处元素放至首元素处
+	arr[leng - 1] ='\0';  
+	if (my_strlen(arr+1) >= 2)
+	{
+		revers_string2(arr+1);  //(3)赋\0后判断是否再递归
+	}
+	arr[leng - 1] = temp;  //(4)将临时变量中最后放至末尾处
 }
-int mian()
+int main()
 {
 	char arr[20];
+	printf("请输入逆序的字符串：\n");
 	gets(arr);
+	
+	//revers_string1(arr);//交换法
+	revers_string2(arr);//递归法
 
-	revers_string1(arr);//交换法
-	revers_string1(arr);//递归法
-
-	puts(arr);
+	printf("逆序后：%s\n", arr);
+	//puts(arr);
 	return 0;
 
 }
