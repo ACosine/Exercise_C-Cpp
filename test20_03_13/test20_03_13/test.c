@@ -1,8 +1,14 @@
 #define _CRT_SECURE_NO_WARNINGS 1  
 #include<stdio.h>
 #include<assert.h>
-//#include<string.h>
+#include<string.h>
 /************************************* 打印一个整数的每一位**************************************************/
+//递归思路
+//Print_bit（326）
+//Print_bit（326/10）  打印326%10
+//Print_bit（32/10）   打印32%10  打印326%10
+//Print_bit（3）       打印32%10  打印326%10  即：
+//打印3                打印2      打印6
 
 // void Print_bit(int num)
 //{
@@ -34,6 +40,14 @@
 //	}
 //	return res;
 //}
+
+//递归思路
+//Factorial2（3）
+//3*Factorial2（3-1）
+//3 * 2 * Factorial2（2-1）即：
+//3 * 2 * 1 
+//
+
 //int Factorial2(int n) //递归法
 //{
 //	assert(n > 0);//负数没有阶乘
@@ -63,12 +77,21 @@
 //int my_strlen1(char* arr)//计数法
 //{
 //	int leng=0;
-//	while (0 != *arr++)//直至访问到\0
+//	while (0 != *arr)//直至访问到\0
 //	{
 //		leng++;
+//      arr++
 //	}
 //	return leng;
 //}
+
+//递归思路
+//my_strlen2（'abc'）
+//1+my_strlen2（'bc'）
+//1 + 1 + my_strlen2（'c'）
+//1 + 1 + 1 + my_strlen2（'\0'）即：
+//1 + 1 + 1 + 0
+
 
 //int  my_strlen2(const char* arr)//递归法
 //{
@@ -76,7 +99,7 @@
 //		return 0;
 //	else 
 //		return 1 + my_strlen2(arr+1);
-//	//注意这里不能写成 (arr++);? 会崩溃
+//	    //注意这里不能写成 (arr++);? 会崩溃
 //
 //}
 
@@ -122,17 +145,17 @@
 //}
 
 /************************************* 字符串逆序 ************************************************************/
-int  my_strlen(const char* arr) //standard
-{
-	int leng = 0;
-	assert(arr != NULL); //断言 & const保护参数
-	while (*arr)
-	{
-		arr++;
-		leng++;
-	}
-	return leng;
-}
+//int  my_strlen(const char* arr) //standard
+//{
+//	int leng = 0;
+//	assert(arr != NULL); //断言 & const保护参数
+//	while (*arr)
+//	{
+//		arr++;
+//		leng++;
+//	}
+//	return leng;
+//}
 //void revers_string1(char arr[])//交换法
 //{
 //	char temp = 0;
@@ -149,31 +172,31 @@ int  my_strlen(const char* arr) //standard
 //	}
 //}
 
-void revers_string2(char arr[]) //递归法
-{
-	char temp = arr[0];   //(1)首元素放临时变量中
-	int leng = my_strlen(arr);
-	arr[0] = arr[leng - 1];  //(2)末尾处元素放至首元素处
-	arr[leng - 1] ='\0';  
-	if (my_strlen(arr+1) >= 2)
-	{
-		revers_string2(arr+1);  //(3)赋\0后判断是否再递归
-	}
-	arr[leng - 1] = temp;  //(4)将临时变量中最后放至末尾处
-}
-int main()
-{
-	char arr[20];
-	printf("请输入逆序的字符串：\n");
-	gets(arr);
-	
-	//revers_string1(arr);//交换法
-	revers_string2(arr);//递归法
-
-	printf("逆序后：%s\n", arr);
-	//puts(arr);
-	return 0;
-
-}
+//void revers_string2(char arr[]) //递归法
+//{
+//	char temp = arr[0];   //(1)首元素放临时变量中
+//	int leng = my_strlen(arr);
+//	arr[0] = arr[leng - 1];  //(2)末尾处元素放至首元素处
+//	arr[leng - 1] ='\0';  
+//	if (my_strlen(arr+1) >= 2)
+//	{
+//		revers_string2(arr+1);  //(3)赋\0后判断是否再递归
+//	}
+//	arr[leng - 1] = temp;  //(4)将临时变量中最后放至末尾处
+//}
+//int main()
+//{
+//	char arr[20];
+//	printf("请输入逆序的字符串：\n");
+//	gets(arr);
+//	
+//	//revers_string1(arr);//交换法
+//	revers_string2(arr);//递归法
+//
+//	printf("逆序后：%s\n", arr);
+//	//puts(arr);
+//	return 0;
+//
+//}
 
 
