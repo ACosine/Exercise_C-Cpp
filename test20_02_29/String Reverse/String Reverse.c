@@ -1,8 +1,9 @@
+#define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
 #include<string.h>
 void Reverse_String(char *s, int start, int leng)
 {
-	char temp;
+	char temp=0;
 	while (start<leng)
 	{
 		temp = s[start];
@@ -17,12 +18,12 @@ void Reverse_Word(char *s)
 	int start, leng,end;
 	start = 0;
 	end = 0;
-	leng = strlen(s)-1;
-	if ((s == NULL) || (*s = '\0') || (s[1] == '\0'))
-		return 0;                               //如果为空或者一个字符则无需转置
-	//   1、将字符串完全转置
-	Reverse_String(s, start, leng);
-	//   2、查询单词，进行单词转置
+	leng = strlen(s);
+   // if((s == NULL) || (*s == '\0') || (s[1] == '\0'));
+	// return 0;                               //如果为空或者一个字符则无需转置
+	
+	Reverse_String(s, start, leng-1);   //   1、将字符串完全转置   //   2、查询单词，进行单词转置
+	
 	while (s[end] != '\0')                      //若访问到\0处代表字符串已访问完
 	{
 		while (s[end] != ' ' && s[end] != '\0') //用end去查找单词之间的空格或者\0，一旦找到空格或者\0，end停止++
