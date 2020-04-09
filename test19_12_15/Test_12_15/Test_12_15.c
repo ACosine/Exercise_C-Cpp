@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
 #include<string.h>
 #include<assert.h>
@@ -6,28 +7,33 @@ char* my_strcpy(char *strDest,const  char *strSrc)
 {
 	char* p = strDest;//保护参数  
 	assert((strSrc != NULL) && (strDest != NULL));	//断言
-	while (*strDest++ = *strSrc++);
-	
+	while (*strDest++ = *strSrc++);//copy strSrc over strDest.
 	return strDest;
 }
-//int my_strlen( const char *string)//const参数保护 string这个字符指针所指向的字符串不能被改变
-//{
-//	int count=0;
-//	assert(string != NULL); //断言
-//	while (*string)
-//	{
-//		string++;
-//		count++;
-//	}
-//	return count;
-//}
+int my_strlen( const char *string)//const参数保护 string这个字符指针所指向的字符串不能被改变
+{
+	int count=0;
+	assert(string != NULL); //断言
+	while (*string)
+	{
+		string++;
+		count++;
+	}
+	return count;
+}
 int main()
 {
-	char dest[] = "sun.";
-	char src[] = "Hello Word";
- //   int leng = my_strlen(src);
-	//printf("src my_strlen=%d\n", leng);
-	
+	char dest[] = { 0 };
+	char src[] = { 0 };
+	printf("请输入源字符串\n");
+	gets(src);
+	printf("请输入目标字符串\n");
+	gets(dest);
+    int leng1 = my_strlen(src);
+	int leng2 = my_strlen(dest);
+	printf("源字符串长度为%d\n", leng1);
+	printf("目标字符串长度为%d\n", leng2);
+	printf("将源字符串拷贝至目标字符串中\n");
 	my_strcpy(dest, src);
 	printf("%s\n", dest);
 	
