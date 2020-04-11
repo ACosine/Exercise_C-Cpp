@@ -21,9 +21,9 @@
 //}
 //int main()
 //{
+//	int num = 0;
 //	printf("请输入要打印的数：\n");
 //	scanf("%d", &num);
-//	int num = 0;
 //	Print_bit(num);
 //	return 0;
 //}
@@ -40,14 +40,14 @@
 //	}
 //	return res;
 //}
-
-//递归思路
-//Factorial2（3）
-//3*Factorial2（3-1）
-//3 * 2 * Factorial2（2-1）即：
-//3 * 2 * 1 
 //
-
+////递归思路
+////Factorial2（3）
+////3*Factorial2（3-1）
+////3 * 2 * Factorial2（2-1）即：
+////3 * 2 * 1 
+//
+//
 //int Factorial2(int n) //递归法
 //{
 //	assert(n > 0);//负数没有阶乘
@@ -57,17 +57,18 @@
 //	}
 //	else
 //	{
-//		return n*Factorial(n - 1);//大于1的进行递归
+//		return n*Factorial2(n - 1);//大于1的进行递归
 //	}
 //}
 //int main()
 //{
 //
-//	int n = 0, Res = 0;
+//	int n = 0,Res1 = 0,Res2 = 0;
 //	printf("请输入要计算的数阶乘：\n");
 //	scanf("%d", &n);   // n超过12就会溢出
-//	Res = Factorial1(n);
-//	printf("Res=%d\n", Res);
+//	Res1 = Factorial1(n);
+//	Res2 = Factorial2(n);
+//	printf("Res1=%d Res2=%d\n", Res1,Res2);
 //	return 0;
 //}
 
@@ -84,15 +85,15 @@
 //	}
 //	return leng;
 //}
-
+//
 //递归思路
 //my_strlen2（'abc'）
 //1+my_strlen2（'bc'）
 //1 + 1 + my_strlen2（'c'）
 //1 + 1 + 1 + my_strlen2（'\0'）即：
 //1 + 1 + 1 + 0
-
-
+//
+//
 //int  my_strlen2(const char* arr)//递归法
 //{
 //	if (0 == *arr)
@@ -102,7 +103,7 @@
 //	    //注意这里不能写成 (arr++);? 会崩溃
 //
 //}
-
+//
 //int  my_strlen3(char* arr)//指针-指针法
 //{
 //	char* p = arr;
@@ -112,7 +113,7 @@
 //	}
 //	return p - arr;//指针-指针得到的是指针之间元素个数
 //}
-
+//
 //int  my_strlen4(const char* arr) //standard
 //{
 //	int leng = 0;
@@ -124,7 +125,7 @@
 //	}
 //	return leng;
 //}
-
+//
 //int main()
 //{
 //	
@@ -171,7 +172,7 @@
 //		right--;
 //	}
 //}
-
+//
 //void revers_string2(char arr[]) //递归法
 //{
 //	char temp = arr[0];   //(1)首元素放临时变量中

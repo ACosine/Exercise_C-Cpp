@@ -70,7 +70,7 @@
 //int Power2(int n, int k)//µİ¹é
 //{
 //	if (k > 1)
-//		return Power(n, k - 1)*n;
+//		return Power2(n, k - 1)*n;
 //	else
 //		return n;
 //
@@ -104,7 +104,7 @@
 //	}
 //	return c;
 //}
-
+//
 //µİ¹éË¼Â·
 //Fib(6)
 //[ Fib(5) + Fib(4)]
