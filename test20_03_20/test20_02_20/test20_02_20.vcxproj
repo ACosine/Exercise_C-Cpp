@@ -11,8 +11,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{8F7D58EE-8089-43E8-A99F-BCDC7422C6F8}</ProjectGuid>
-    <RootNamespace>test_20_03_12</RootNamespace>
+    <ProjectGuid>{33BEE947-732A-4816-B0D3-E5A5C12C41CE}</ProjectGuid>
+    <RootNamespace>test20_02_20</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -65,9 +65,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Daffodil number.c" />
-    <ClCompile Include="Diamond.c" />
-    <ClCompile Include="string reverse.c" />
+    <ClCompile Include="test.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

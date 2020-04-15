@@ -15,13 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Daffodil number.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="string reverse.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Diamond.c">
+    <ClCompile Include="test.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
