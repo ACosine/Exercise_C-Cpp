@@ -7,10 +7,11 @@ char* my_strcpy(char *strDest,const  char *strSrc)
 {
 	char* p = strDest;//保护参数  
 	assert((strSrc != NULL) && (strDest != NULL));	//断言
-	while (*strDest++ = *strSrc++);//copy strSrc over strDest.
-	return strDest;
+	while (*strDest++ = *strSrc++);//copy strSrc over strDest.包括\0
+	return p;//返回目的字符串首地址
 }
-int my_strlen( const char *string)//const参数保护 string这个字符指针所指向的字符串不能被改变
+int my_strlen( const char *string)
+//const参数保护string这个字符指针所指向的字符串不能被改变
 {
 	int count=0;
 	assert(string != NULL); //断言
