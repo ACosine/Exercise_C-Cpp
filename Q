@@ -1,5 +1,6 @@
 Simulation implementation Qsort  采用冒泡方式模拟实现qsort
 Word Reverse  单词转置
+Library Functions 1.my_strlen 2.my_strcpy 3.my_strcat 4.my_strcmp
 
 19_11_19    前++和后++  
 19_11_21    sizeof计算每种类型的大小
@@ -7,7 +8,7 @@ Word Reverse  单词转置
 
 19_11_30    1.冒泡排序法  2.小写转换成大写  3.大小端检测
 			
-19_12_15    1.自我实现my_sizeof                                      测试还有Bug栈周围变量损坏
+19_12_15    1.自我实现my_sizeof                                      
             2.自我实现my_strcpy
 			
 20_02_27    两个数的最小公倍数
@@ -35,6 +36,9 @@ Word Reverse  单词转置
 20_03_20    1.水仙花数(自幂数)2.菱星3.字符串逆序
 
 20-03_26	函数：1素数 2闰年 3交换两数 4乘法口诀	
+
+20_03_27    1.二进制中1的个数(谷歌)(3) 2.二进制中不同位的个数 3.分别输出二进制的奇数位和偶数位 
+20_03_28    1.交换两变量(品茗) 2.指针访问数组
 
 20_04_01    1.计算Sn=a+aa+aaa+aaaa 2.调整奇偶顺序	
 			

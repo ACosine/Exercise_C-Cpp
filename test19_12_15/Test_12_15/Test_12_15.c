@@ -5,8 +5,8 @@
 //指针函数，两个字符指针作为形参，函数返回一个字符指针
 char* my_strcpy(char *strDest,const  char *strSrc)
 {
-	char* p = strDest;//保护参数  
 	assert((strSrc != NULL) && (strDest != NULL));	//断言
+	char* p = strDest;//保护参数  
 	while (*strDest++ = *strSrc++);//copy strSrc over strDest.包括\0
 	return p;//返回目的字符串首地址
 }
@@ -24,16 +24,20 @@ int my_strlen( const char *string)
 }
 int main()
 {
-	char dest[] = { 0 };
-	char src[] = { 0 };
+	
+	char src[30];
+	char dest[30];
+
 	printf("请输入源字符串\n");
 	gets(src);
 	printf("请输入目标字符串\n");
 	gets(dest);
+
     int leng1 = my_strlen(src);
 	int leng2 = my_strlen(dest);
 	printf("源字符串长度为%d\n", leng1);
 	printf("目标字符串长度为%d\n", leng2);
+
 	printf("将源字符串拷贝至目标字符串中\n");
 	my_strcpy(dest, src);
 	printf("%s\n", dest);

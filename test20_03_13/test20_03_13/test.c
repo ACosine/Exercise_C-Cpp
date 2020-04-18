@@ -100,7 +100,7 @@
 //		return 0;
 //	else 
 //		return 1 + my_strlen2(arr+1);
-//	    //注意这里不能写成 (arr++);? 会崩溃
+//	    //注意这里不能写成(arr++)可以写(++arr)
 //
 //}
 //
@@ -173,7 +173,7 @@
 //	}
 //}
 //
-//void revers_string2(char arr[]) //递归法
+//void revers_string2(char arr[]) //递归法***
 //{
 //	char temp = arr[0];   //(1)首元素放临时变量中
 //	int leng = my_strlen(arr);
