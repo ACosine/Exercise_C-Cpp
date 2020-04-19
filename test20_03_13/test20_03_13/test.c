@@ -41,6 +41,7 @@
 //	return res;
 //}
 //
+//
 ////µÝ¹éË¼Â·
 ////Factorial2£¨3£©
 ////3*Factorial2£¨3-1£©
