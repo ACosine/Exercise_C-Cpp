@@ -27,7 +27,7 @@ int my_strlen( const char *string)
 int main()
 {
 	
-	char src[30];
+	char src[30];//源字符串必须有结束标志
 	char dest[30];//目标空间需足够大才能保证copy得下
 
 	printf("请输入源字符串\n");
