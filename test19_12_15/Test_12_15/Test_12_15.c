@@ -10,8 +10,9 @@ char* my_strcpy(char *strDest,const  char *strSrc)
 	while (*strDest++ = *strSrc++);//copy strSrc over strDest.包括\0
 	return p;//返回目的字符串首地址
 }
-int my_strlen( const char *string)
+
 //const参数保护string这个字符指针所指向的字符串不能被改变
+int my_strlen( const char *string)
 {
 	int count=0;
 	assert(string != NULL); //断言
@@ -22,11 +23,12 @@ int my_strlen( const char *string)
 	}
 	return count;
 }
+
 int main()
 {
 	
 	char src[30];
-	char dest[30];
+	char dest[30];//目标空间需足够大才能保证copy得下
 
 	printf("请输入源字符串\n");
 	gets(src);
