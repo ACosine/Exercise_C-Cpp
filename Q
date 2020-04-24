@@ -4,7 +4,7 @@ Library Functions 1.my_strlen 2.my_strcpy 3.my_strcat 4.my_strcmp
 
 19_11_19    前++和后++  
 19_11_21    sizeof计算每种类型的大小
-19_11_23    身份证归属查询                                            测试还有   Bug
+19_11_23    身份证归属查询                                            测试Bug
 
 19_11_30    1.冒泡排序法  2.小写转换成大写  3.大小端检测
 			
