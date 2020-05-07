@@ -1,4 +1,4 @@
-坚持每天写代码 明天开
+坚持每天写代码 明天
 
 
 mulation implementation Qsort  采用冒泡方式模拟实现qsort
