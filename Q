@@ -1,4 +1,4 @@
-坚持每天写代码
+坚持每天写代码 纯输出
 
 
 mulation implementation Qsort  采用冒泡方式模拟实现qsort
