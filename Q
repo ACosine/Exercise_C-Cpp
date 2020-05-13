@@ -1,4 +1,4 @@
-坚持每天写代码 纯公开价格还款卡
+坚持每天写代码 纯公开价格还款
 
 
 mulation implementation Qsort  采用冒泡方式模拟实现qsort
