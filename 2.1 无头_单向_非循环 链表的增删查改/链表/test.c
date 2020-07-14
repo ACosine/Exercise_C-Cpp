@@ -6,8 +6,8 @@ int main()
 {
 	TestSList();
 
-	assert(NULL);
-	//assert(0);
+	//assert(NULL);
+	////assert(0);
 	return 0;
 
 }
