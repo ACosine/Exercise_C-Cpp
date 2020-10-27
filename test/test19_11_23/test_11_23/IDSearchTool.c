@@ -1,5 +1,4 @@
 #include "common.h"
-
 int main(int argc, char *argv[])
 {
 	const char *title = "身份验证查询系统";   //全局变量title变量
