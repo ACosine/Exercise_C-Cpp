@@ -4,7 +4,7 @@
 - Word Reverse  单词转置
 - Library Functions 
 
-​      1.my_strlen 2.my_strcpy 3.my_strcat 4.my_strcmp
+​          1.my_strlen    2.my_strcpy    3.my_strcat   4.my_strcmp
 
 - 19_11_19    前++和后++ 
 
@@ -26,9 +26,9 @@
 
 - 20_03_11	1.数组逆置 2.数组互换内容	
 
-- 20_03_13    递归：1.按位打印(2) 2.n!(2种优化) 
+- 20_03_13    递归：1. 按位打印(2)          2.  n!(2种优化) 
 
-​                                 3.my_strlen(4种优化) 4.字符串逆序(2种优化)
+  ​                     3.  my_strlen(4种优化)         4.  字符串逆序(2种优化)
 
 - 20_03_14    递归：1.每位之和(2) 2.n的k次(2) 3.斐波那契数(2)	
 
