@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1  
 #include <stdio.h>
+
 void Rank(int Arr[], int n)   //ÅÅÐòº¯Êý
 {
 	for (int i = 0; i < n - 1; ++i)         //ÌËÊý
