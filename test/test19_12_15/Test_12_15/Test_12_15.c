@@ -2,6 +2,7 @@
 #include<stdio.h>
 #include<string.h>
 #include<assert.h>
+
 //指针函数，两个字符指针作为形参，函数返回一个字符指针
 char* my_strcpy(char *strDest,const  char *strSrc)
 {
