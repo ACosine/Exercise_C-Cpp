@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS 1  
 #include <stdio.h>
 #include <math.h>
+
 /**************************************************10个整数按从大到小排序**************************************************/
 //void Rank(int Arr[], int n) //排序函数
 //{
