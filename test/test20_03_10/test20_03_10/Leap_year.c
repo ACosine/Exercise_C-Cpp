@@ -1,8 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1  
 #include<stdio.h>
 #include<math.h>
-
-
 /*****************************************打印100~200之间的素数*****************************************************/
 int Is_prime(int n)
 {
