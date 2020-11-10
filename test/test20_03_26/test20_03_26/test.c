@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS 1  
 #include<stdio.h>
 #include<math.h>
+
 /**********************************1、函数判断素数****************************************************/
 
 //int IsPrime(int value)              //素数：只能被自身和1整除的数称为素数
