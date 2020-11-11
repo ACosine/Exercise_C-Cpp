@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1  
 #include<stdio.h>
+
 /******************************************1.统计二进制补码中1的个数************************************************/
 
 //int count_2bit1(unsigned int num)//取余法
