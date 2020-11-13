@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1  
 #include<stdio.h>
+
 ///******************************º∆À„Sn=a+aa+aaa+aaaa+aaaaa*********************************/
 ////2+22+222+2222+22222
 //int Sumbit(int num,int n)
