@@ -1,4 +1,4 @@
-坚持每天写代码 ！一定能帮助你找个好工作的，加油
+坚持每天写代码 ！一定能帮助你找个好工作的，
 
 - mulation implementation Qsort  采用冒泡方式模拟实现qsort
 - Word Reverse  单词转置
