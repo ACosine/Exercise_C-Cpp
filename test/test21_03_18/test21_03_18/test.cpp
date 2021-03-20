@@ -1,4 +1,4 @@
-//输入两个整数n和m,从数列1,2,3…n中随意取几个数使其和等于m
+//输入两个整数n和m,从数列1,2,3…n中随意取几个数使其和等于m。
 #include<iostream>
 using namespace std;
 void find(int n, int m, int *flag, int leng)
